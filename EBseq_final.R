@@ -18,7 +18,7 @@ library("edgeR")
 library("sva")
 library("RColorBrewer")
 
-## load normalized, sva adjusted counts from edgeR
+## load raw counts matrix. Fa
 eset <- read.delim("~/aitor/subread-1.6.2-Linux-x86_64/bin/counts.txt", comment.char="#")
 counts_short <- eset[,7:30]
 row.names(counts_short) <- eset$Geneid
