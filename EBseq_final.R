@@ -86,9 +86,6 @@ plotMDS(log2(cleaned_count), top = 1000, labels = NULL, col = as.numeric(samples
 title(main="Replicate groups")
 
 ## Split dataset in the 2 time points wheree we want to find trends (independently)
-# SKIP
-# Sizes_8h <- Sizes[samples$times == 8]
-# Sizes_24h <- Sizes[samples$times == 24]
 # if norm + sva applied, set lib size factors to 1
 Sizes_8h <- c(1,1,1,1,1,1,1,1,1,1,1,1)
 Sizes_24h <- c(1,1,1,1,1,1,1,1,1,1,1,1)
@@ -126,8 +123,9 @@ todo_genes <- getBM(attributes=c('ensembl_gene_id','hgnc_symbol','chromosome_nam
 
 results_8h_TOP <- cbind(todo_genes[match(row.names(results_8h_TOP), todo_genes$ensembl_gene_id),], results_8h_TOP)
 results_24h_TOP <- cbind(todo_genes[match(row.names(results_24h_TOP), todo_genes$ensembl_gene_id),], results_24h_TOP)
+norm_cleaned_count <- cbind(todo_genes[match(row.names(cleaned_count), todo_genes$ensembl_gene_id),], cleaned_count)
 
 ## save annotated results
 write.csv(results_8h_TOP, "results_8h.csv")
 write.csv(results_24h_TOP, "results_24h.csv")
-
+write.csv(norm_cleaned_count, "norm_cleaned_count.csv")
