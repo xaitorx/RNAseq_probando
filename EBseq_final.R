@@ -1,3 +1,10 @@
+I LIKE THIS ONE
+1. remove low abundant genes (quite stringent)
+2. MedianNorm normalization (any other will do I guess)
+3. SVA on the whole dataset (~conditions only)
+4. low cutoff. 0.5 PP
+5. Consistent results. DNAJB9 always in top hits, other genes we know in the lab following the expected trajectories.
+
 ### EBseqHMM
 # statistical analysis in ordered RNA-seq experiments
 # identify genes and isoforms that have non-constant expression profile over the time points/positions, and cluster them into expression paths
