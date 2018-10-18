@@ -4,6 +4,8 @@ I LIKE THIS ONE
 3. SVA on the whole dataset (~conditions only)
 4. low cutoff. 0.5 PP
 5. Consistent results. DNAJB9 always in top hits, other genes we know in the lab following the expected trajectories.
+_______________________________________________________________________________________________________________________
+
 
 ### EBseqHMM
 # statistical analysis in ordered RNA-seq experiments
