@@ -60,3 +60,8 @@ Single-end sequencing. 50bp read lenght.
 # Overlap
 
 ![Slide12](https://github.com/xaitorx/RNAseq_probando/blob/master/pics/Slide20.JPG)
+
+# Example. ID gene family
+
+![Slide13](https://github.com/xaitorx/RNAseq_probando/blob/master/pics/Slide38.JPG)
+
